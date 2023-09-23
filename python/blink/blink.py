@@ -12,7 +12,7 @@ ledPin = 11    # define ledPin
 
 def setup():
     GPIO.setmode(GPIO.BOARD)       # use PHYSICAL GPIO Numbering
-    GPIO.setup(ledPin, GPIO.OU, initial=GPIO.LOW)   # set the ledPin to OUTPUT mode
+    GPIO.setup(ledPin, GPIO.OUT, initial=GPIO.LOW)   # set the ledPin to OUTPUT mode
     # GPIO.output(ledPin, GPIO.LOW)  # make ledPin output LOW level 
     print ('using pin%d'%ledPin)
 
